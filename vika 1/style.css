@@ -1,0 +1,48 @@
+.container{
+    position: relative;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-2{
+    height: 30px;
+    background: blue;
+    width: auto;
+}
+
+.container-3{
+    margin-left: 5em;
+}
+
+.play_btn{
+    align-items: flex-end;
+}
+
+input{
+    height: 20px;
+}
+
+.piano-container{
+    position: fixed;
+    display: flex;
+    margin-top: 80px;
+    width: 750px;
+    height: 150px;
+    border: thin solid black;
+}
+
+.white-keys{
+    height: 150px;
+    width: 80px;
+    border: thin solid black;
+    text-align:center;
+}
+
+.black-keys{
+    background: black;
+    height: 100px;
+    width: 50px;
+    position: sticky;
+    
+}
