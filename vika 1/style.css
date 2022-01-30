@@ -1,11 +1,11 @@
 .container{
     position: relative;
-    align-items: center;
+    margin-left: 25%;
     display: flex;
     flex-direction: column;
 }
 
-.container-2{
+.container-1{
     height: 30px;
     width: auto;
 }
@@ -14,18 +14,23 @@
     margin-left: 5em;
 }
 
-.play_btn{
+.btn{
     align-items: flex-end;
+    height: 20px;
 }
 
-input{
-    height: 20px;
+button{
+    height: 25px;
+}
+
+#play-btn{
+    margin-right: 80px;
 }
 
 .piano-container{
     position: fixed;
     display: flex;
-    margin-top: 80px;
+    margin-top: 60px;
     width: 750px;
     height: 150px;
     border: thin solid black;
@@ -42,6 +47,7 @@ input{
     background: black;
     height: 100px;
     width: 50px;
-    position: sticky;
+    position: absolute;
+    margin-left: 10px;
     
 }
