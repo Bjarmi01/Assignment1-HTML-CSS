@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  .black-key{
+    color: white;
+    vertical-align: middle;
+  }
+
+  .form-container{
+    padding: 0% 0% 0% 14%;
+    display: block;
+  }
+
+  .btn{
+    align-items: flex-end;
+    height: 14px;
+  }
+
+  select{
+    background: rgb(231, 229, 229);
+    border: thin solid black;
+    border-radius: 5px;
+  }
+
+  .white-key{
+    background-color: white;
+    width:112%;
+    display: block;
+    height: 150px;
+    box-shadow: 2px 2px #888888;
+    border: 1px solid #c2c0c0;
+  }
+
+  form button{
+    width: 25px;
+    height: 25px;
+    background: rgb(231, 229, 229);
+    border: thin solid black;
+    border-radius: 5px;
+  }
+
+  #play-btn{
+    margin-right: 80px;
+  }
+
+  .piano {
+    margin-top: 40px;
+    padding: 0 1% 3%;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .key {
+    display: inline-block;
+    position: relative;
+    width: 7%;
+  }
+
+  .key .black-key {
+    background: #000000;
+    height: 120px;
+    position: absolute;
+    top: 0px;
+    right: -40%;
+    width: 70%;
+    z-index: 1;
+  }
+
+  .key .white-key:active{
+    background: gray;
+    position: relative;
+  }
+
+  #oops-img{
+    display: none;
+  }
+
+@media only screen and (max-width: 600px) {
+  form {
+    display: none;
+  }
+
+  ul{
+    display: none;
+  }
+  #oops-img{
+    display: block;
+    background-repeat:no-repeat ;
+  }
+}
