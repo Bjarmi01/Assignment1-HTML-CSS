@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Piano Application</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="https://veff2022-h5.herokuapp.com/api/v1/tunes"></script>
+        <script src="https://unpkg.com/tone"></script>
+        <script src="tunes.js"></script>
+
+    </head>
+
+    <body onkeypress="buttonPressed()">
+        <div id="controlDiv">
+            <div class="controlSubDiv">
+                <label for="tunesDrop">Tune:</label>
+                <select name="tunes" id="tunesDrop" onchange="change(this.value)">
+                    <option value="elise">Für Elise</option>
+                    <option value="smoke">The Godfather</option>
+                    <option value="seven">Seven Nation Army</option>
+                    </select>
+                <button id="tunebtn"><img class="controlimg" src="img/play.png" alt="Play the selected tune." onclick="playTune();"></button>
+            </div>
+            <div class="controlSubDiv">
+                <label for="rec_btn">Record:</label>
+                <button id="rec_btn"><img class ="controlimg" src="img/record.png" alt="record button"></button>
+                <button id="stop_btn"><img class ="controlimg" src="img/stop.png" alt="stop button"></button>
+            </div>
+        </div>
+        <div id="keyboardDiv">
+            <button id="c4" class="whitebtn" onclick="buttonPressed(this.id)">C4<br/> (a)</button><button id="c#4" class="blackbtn" onclick="buttonPressed(this.id)">C#4<br /> (w)</button><button id="d4" class="whitebtn" onclick="buttonPressed(this.id)">D4<br /> (s)</button><button id="d#4" class="blackbtn" onclick="buttonPressed(this.id)">D#4<br /> (e)</button><button id="e4" class="whitebtn" onclick="buttonPressed(this.id)">E4<br /> (d)</button><button id="f4" class="whitebtn" onclick="buttonPressed(this.id)">F4<br /> (f)</button><button id="f#4" class="blackbtn" onclick="buttonPressed(this.id)">F#4<br /> (t)</button><button id="g4" class="whitebtn" onclick="buttonPressed(this.id)">G4<br /> (g)</button><button id="g#4" class="blackbtn" onclick="buttonPressed(this.id)">G#4<br /> (y)</button><button id="a4" class="whitebtn" onclick="buttonPressed(this.id)">A4<br /> (h)</button><button id="bb4" class="blackbtn" onclick="buttonPressed(this.id)">Bb4<br /> (u)</button><button id="b4" class="whitebtn" onclick="buttonPressed(this.id)">B4<br /> (j)</button><button id="c5" class="whitebtn" onclick="buttonPressed(this.id)">C5<br /> (k)</button><button id="c#5" class="blackbtn" onclick="buttonPressed(this.id)">C#5<br /> (o)</button><button id="d5" class="whitebtn" onclick="buttonPressed(this.id)">D5<br /> (l)</button><button id="d#5" class="blackbtn" onclick="buttonPressed(this.id)">D#5<br /> (p)</button><button id="e5" class="whitebtn" onclick="buttonPressed(this.id)">E5<br /> (;)</button>
+        </div> 
+        <div id="tooSmallWarning"><img id="oopsimg" src="img/oops.jpg" alt="An image saying oops."><p>This website requires at least 600px screen width.</p></div>
+    </body>
+</html>
