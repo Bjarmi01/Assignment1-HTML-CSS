@@ -1,6 +1,6 @@
 {
   "name": "tunebackend",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A backend for a tune application.",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,7 @@
     "REST",
     "Veff213"
   ],
-  "author": "",
+  "author": "Sigurður Bjarmi",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.2",
